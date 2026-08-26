@@ -54,7 +54,7 @@ export default function SignInForm() {
         </div>
         <input type="hidden" name="redirectTo" />
         <Button className="mt-4 w-full">
-          Sign Up <ArrowRightIcon className="ml-auto h-5 w-5 text-gray-50" />
+          Sign In <ArrowRightIcon className="ml-auto h-5 w-5 text-gray-50" />
         </Button>
         <div
           className="flex h-8 items-end space-x-1"
