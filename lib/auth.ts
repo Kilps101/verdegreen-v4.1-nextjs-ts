@@ -5,6 +5,7 @@ import { Pool } from "pg";
 export const auth = betterAuth({
   database: new Pool({
     // Connection options
+    ssl: true,
   }),
   emailAndPassword: {
     enabled: true,
