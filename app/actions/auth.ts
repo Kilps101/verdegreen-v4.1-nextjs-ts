@@ -14,11 +14,9 @@ export async function handleSignUp(formData: FormData) {
       email,
       password,
       name,
+      callbackURL: "/dashboard",
     },
-    headers: await headers(),
   });
-
-  redirect("/dashboard");
 }
 
 export async function handleSignIn(formData: FormData) {
@@ -29,11 +27,9 @@ export async function handleSignIn(formData: FormData) {
     body: {
       email,
       password,
+      callbackURL: "/dashboard",
     },
-    headers: await headers(),
   });
-
-  redirect("/dashboard");
 }
 
 export async function handleSignOut() {
