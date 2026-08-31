@@ -12,6 +12,9 @@ export const auth = betterAuth({
     database: process.env.POSTGRES_DB,
     ssl: true,
   }),
+  baseURL: {
+    allowedHosts: ["*.vercel.app"],
+  },
   emailAndPassword: {
     enabled: true,
   },
