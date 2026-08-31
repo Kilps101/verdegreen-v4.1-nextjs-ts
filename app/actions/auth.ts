@@ -15,6 +15,7 @@ export async function handleSignUp(formData: FormData) {
       password,
       name,
     },
+    headers: await headers(),
   });
 
   redirect("/dashboard");
@@ -29,6 +30,7 @@ export async function handleSignIn(formData: FormData) {
       email,
       password,
     },
+    headers: await headers(),
   });
 
   redirect("/dashboard");
